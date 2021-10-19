@@ -169,8 +169,11 @@ fun Task.createPackageZipTask(platform: String, arch: String, configuration: Zip
 
 val platformArchPairs = listOf(
   "darwin" to "x64",
+  "darwin" to "arm64",
   "linux"  to "x64",
+  "linux"  to "arm64",
   "win32"  to "x64",
+  "win32"  to "arm64",
 )
 
 tasks.create("dist") {
